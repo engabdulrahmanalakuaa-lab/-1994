@@ -9,7 +9,7 @@
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "sqlite3": "^5.1.7",
+    "better-sqlite3": "^11.0.0",
     "bcryptjs": "^2.4.3",
     "node-thermal-printer": "^4.4.0",
     "pdfmake": "^0.2.7"
@@ -34,13 +34,6 @@
     "files": [
       "**/*",
       "!dist"
-    ],
-    "extraResources": [
-      {
-        "from": "node_modules/sqlite3/lib/binding/",
-        "to": "node_modules/sqlite3/lib/binding/",
-        "filter": ["**/*"]
-      }
     ]
   }
 }
